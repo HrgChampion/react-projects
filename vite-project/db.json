@@ -1,0 +1,36 @@
+{
+    "user":[
+        {
+            "name":"Adam",
+            "address":"123 Main St",
+            "email":"adam@gmail.com",
+            "contact":"38397784737",
+            "id":1
+
+        },
+        {
+            "name":"Adam",
+            "address":"123 Main St",
+            "email":"adam@gmail.com",
+            "contact":"38397784737",
+            "id":2
+
+        },
+        {
+            "name":"Adam",
+            "address":"123 Main St",
+            "email":"adam@gmail.com",
+            "contact":"38397784737",
+            "id":3
+
+        },
+        {
+            "name":"Adam",
+            "address":"123 Main St",
+            "email":"adam@gmail.com",
+            "contact":"38397784737",
+            "id":4
+
+        }
+    ]
+}
