@@ -1,36 +1,53 @@
 {
-    "user":[
-        {
-            "name":"Adam",
-            "address":"123 Main St",
-            "email":"adam@gmail.com",
-            "contact":"38397784737",
-            "id":1
-
-        },
-        {
-            "name":"Adam",
-            "address":"123 Main St",
-            "email":"adam@gmail.com",
-            "contact":"38397784737",
-            "id":2
-
-        },
-        {
-            "name":"Adam",
-            "address":"123 Main St",
-            "email":"adam@gmail.com",
-            "contact":"38397784737",
-            "id":3
-
-        },
-        {
-            "name":"Adam",
-            "address":"123 Main St",
-            "email":"adam@gmail.com",
-            "contact":"38397784737",
-            "id":4
-
-        }
-    ]
+  "user": [
+    {
+      "name": "Adam",
+      "address": "123 Main St",
+      "email": "adam@gmail.com",
+      "contact": "38397784737",
+      "id": 1
+    },
+    {
+      "name": "Adam",
+      "address": "123 Main St",
+      "email": "adam@gmail.com",
+      "contact": "38397784737",
+      "id": 2
+    },
+    {
+      "name": "Adam",
+      "address": "123 Main St",
+      "email": "adam@gmail.com",
+      "contact": "38397784737",
+      "id": 3
+    },
+    {
+      "name": "Adam",
+      "address": "123 Main St",
+      "email": "adam@gmail.com",
+      "contact": "38397784737",
+      "id": 4
+    },
+    {
+      "name": "Adam",
+      "address": "123 Main St",
+      "email": "adam@gmail.com",
+      "contact": "38397784737",
+      "id": 5
+    },
+    {
+      "name": "James Bond",
+      "address": "123 Main St",
+      "email": "adam@gmail.com",
+      "contact": "38397784737",
+      "id": 6
+    },
+    {
+      "name": "Steve",
+      "email": "steve@yahoo.mail",
+      "contact": "37894768789",
+      "address": "New York,Usa",
+      "id": 7
+    }
+  ]
 }
