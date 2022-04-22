@@ -1,0 +1,35 @@
+{
+    "listings":[
+        {
+            "id":1,
+            "name":"ABC Company",
+            "address":"123 Main St",
+            "city":"New York",
+            "capacity":100,
+            "price":100,
+            "verified":true,
+            "rating":4.5
+        },
+        {
+            "id":2,
+            "name":"DEF Company",
+            "address":"121 Main St",
+            "city":"Boston",
+            "capacity":50,
+            "price":200,
+            "verified":false,
+            "rating":4.6
+        },
+        {
+            "id":3,
+            "name":"GHI Company",
+            "address":"123 Church St",
+            "city":"Chikago",
+            "capacity":100,
+            "price":100,
+            "verified":true,
+            "rating":4.5
+        }
+
+    ]
+}
