@@ -6,15 +6,45 @@ import {useNavigate} from "react-router-dom";
 import { useDispatch } from "react-redux";
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { addPet } from "../../Redux/action";
 
 export const AddListing = () => {
     
-    const dispatch=useDispatch();
-    const navigate=useNavigate();
+    const [state, setState] = useState({
+        name: "",
+        address: "",
+        city:"",
+        price: "",
+        rating: "",
+        verified: false
+
+    });
     
-    const handleChange=(e)=>{
-        let {name,value}=e.target;
-    }
+      const dispatch=useDispatch();
+      const { name,address,city,price,rating,verified,capacity} = state;
+      const navigate = useNavigate();
+    
+      const handleChange = (e) => {
+          let {name,value,type,checked} = e.target;
+          if(type=="checkbox"){
+              value=checked?true:false;
+          }
+            setState({
+                ...state,
+                [name]:value
+            })
+        };
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            if(!name || !city || !price || !address || !rating || !capacity)  {
+                alert("Please fill all the fields");
+                return;
+            }
+            
+           dispatch(addPet(state));
+            alert("Details added successfully");
+            navigate("/");
+        }
     
     return (
         <div>
@@ -30,6 +60,7 @@ export const AddListing = () => {
           }}
           noValidate
           autoComplete="off"
+          onSubmit={handleSubmit}
         >
           <TextField
             id="standard-basic"
@@ -55,11 +86,22 @@ export const AddListing = () => {
           <br />
           <TextField
             id="standard-basic"
+            label="Capacity"
+            variant="standard"
+            
+            type="city"
+            name="capacity"
+            onChange={handleChange}
+            required
+          />
+          <br />
+          <TextField
+            id="standard-basic"
             label="City"
             variant="standard"
             
             type="city"
-            name="contact"
+            name="city"
             onChange={handleChange}
             required
           />
@@ -69,7 +111,7 @@ export const AddListing = () => {
             label="Price"
             variant="standard"
            
-            type="text"
+            type="number"
             name="price"
             onChange={handleChange}
             required
@@ -79,14 +121,14 @@ export const AddListing = () => {
             id="standard-basic"
             label="Rating"
             variant="standard"
-           
+            placeholder="0-5"
             type="text"
             name="rating"
             onChange={handleChange}
             required
           />
           <br />
-          <FormControlLabel control={<Checkbox  />} label="Verified" />
+          <FormControlLabel control={<Checkbox  />} label="Verified" type="checkbox" />
           <br />
           <Button   variant="contained" type="submit" color="primary">Submit</Button>
         </Box>

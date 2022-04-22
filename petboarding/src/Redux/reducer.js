@@ -10,7 +10,8 @@ export const PetReducer=(state=initState,{type,payload})=>{
         case SET_LISTING:
             return{
                 ...state,
-                listings:payload
+                listings:payload,
+                loading:false
             }
         default:
             return state;

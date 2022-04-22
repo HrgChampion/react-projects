@@ -1,35 +1,74 @@
 {
-    "listings":[
-        {
-            "id":1,
-            "name":"ABC Company",
-            "address":"123 Main St",
-            "city":"New York",
-            "capacity":100,
-            "price":100,
-            "verified":true,
-            "rating":4.5
-        },
-        {
-            "id":2,
-            "name":"DEF Company",
-            "address":"121 Main St",
-            "city":"Boston",
-            "capacity":50,
-            "price":200,
-            "verified":false,
-            "rating":4.6
-        },
-        {
-            "id":3,
-            "name":"GHI Company",
-            "address":"123 Church St",
-            "city":"Chikago",
-            "capacity":100,
-            "price":100,
-            "verified":true,
-            "rating":4.5
-        }
-
-    ]
+  "listings": [
+    {
+      "id": 1,
+      "name": "ABC Company",
+      "address": "123 Main St",
+      "city": "New York",
+      "capacity": 100,
+      "price": 100,
+      "verified": true,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "DEF Company",
+      "address": "121 Main St",
+      "city": "Boston",
+      "capacity": 50,
+      "price": 200,
+      "verified": false,
+      "rating": 4.6
+    },
+    {
+      "id": 3,
+      "name": "GHI Company",
+      "address": "123 Church St",
+      "city": "Chikago",
+      "capacity": 100,
+      "price": 100,
+      "verified": true,
+      "rating": 4.5
+    },
+    {
+      "id": 4,
+      "name": "XYF Company",
+      "address": "101 Main St",
+      "city": "Boston",
+      "capacity": 150,
+      "price": 200,
+      "verified": false,
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "name": "DEF Company",
+      "address": "121 Garden St",
+      "city": "New York",
+      "capacity": 50,
+      "price": 200,
+      "verified": true,
+      "rating": 3.2
+    },
+    {
+      "name": "Bravo Ltd",
+      "address": "Andaman Street",
+      "city": "Chikago",
+      "price": "120",
+      "rating": "5",
+      "verified": false,
+      "capacity": "24",
+      "id": 6
+    },
+    {
+      "name": "Rajasthan Royals",
+      "address": "Ozaka lane",
+      "city": "New York",
+      "price": "250",
+      "rating": "4",
+      "verified": false,
+      "capacity": "45",
+      "id": 7
+    }
+  ]
 }
