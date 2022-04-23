@@ -43,13 +43,13 @@ export const AddListing = () => {
             
            dispatch(addPet(state));
             alert("Details added successfully");
-            navigate("/");
+            navigate("/admin");
         }
     
     return (
         <div>
          <Button style={{margin:"20px"}} type="submit" color="primary" onClick={()=>{
-        navigate("/")
+        navigate("/admin")
     }}>Go Back</Button>   
 
 <Box style={{marginLeft:"500px"}}

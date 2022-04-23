@@ -29,8 +29,9 @@ export const Login=()=>{
             
             dispatch(setUserToken(res.data.token));
         localStorage.setItem("user_token", res.data.token);
-        navigate("/");
-            
+
+       (user.email!=="admin@admin.com") ? navigate("/userhome"): navigate("/admin");
+        
         })
         .catch(err=>{
             console.log(err);

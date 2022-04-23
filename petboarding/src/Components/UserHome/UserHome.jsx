@@ -15,8 +15,8 @@ import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Box from "@mui/material/Box";
-import "./Home.css";
-export const Home = () => {
+import "./UserHome.css";
+export const UserHome = () => {
   const { listings,loading } = useSelector((state) => state.listings);
   const { price, city, verified, rating } = listings;
   const dispatch = useDispatch();
@@ -75,10 +75,10 @@ export const Home = () => {
           variant="contained"
           style={{ margin: "50px" }}
           onClick={() => {
-            navigate("/listing/create");
+            navigate("/pets/create");
           }}
         >
-          Add Listing
+          Add Pet Details
         </Button>
         <br />
         <br />
@@ -134,7 +134,6 @@ export const Home = () => {
           </FormControl>
         </Box>
       </div>
-      
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="caption table">
           <caption>All Pet Listing Details</caption>

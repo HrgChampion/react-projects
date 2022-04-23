@@ -6,6 +6,7 @@ import {applyMiddleware, combineReducers} from 'redux';
 const rootReducer = combineReducers({
     listings: PetReducer,
     register: PetReducer,
+    pets: PetReducer
     
 });
 
