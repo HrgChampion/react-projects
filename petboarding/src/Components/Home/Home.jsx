@@ -15,6 +15,7 @@ import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Box from "@mui/material/Box";
+
 export const Home = () => {
   const { listings,loading } = useSelector((state) => state.listings);
   const { price, city, verified, rating } = listings;
@@ -67,7 +68,7 @@ export const Home = () => {
     dispatch(fetchListing(listings));
   };
 
-  return loading?"Loading...": (
+  return loading?<img src="https://c.tenor.com/A17aJ1ZniiUAAAAM/dog-walking.gif" alt="loading..."/>: (
     <div>
       <div style={{ display: "flex" }}>
         <Button

@@ -4,7 +4,9 @@ import thunk from 'redux-thunk';
 import {applyMiddleware, combineReducers} from 'redux';
 
 const rootReducer = combineReducers({
-    listings: PetReducer
+    listings: PetReducer,
+    register: PetReducer,
+    
 });
 
 export const store=createStore(rootReducer,applyMiddleware(thunk));

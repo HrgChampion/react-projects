@@ -1,8 +1,12 @@
 import { SET_LISTING } from "./action";
+import {REGISTER} from './action';
+import {SET_USER} from './action' ;
 const initState = {
     listings: [],
     loading: true,
-    error: null
+    error: null,
+    Register:{},
+    user_token: ""
 };
 
 export const PetReducer=(state=initState,{type,payload})=>{
@@ -13,6 +17,13 @@ export const PetReducer=(state=initState,{type,payload})=>{
                 listings:payload,
                 loading:false
             }
+        case REGISTER:
+            return {
+                ...state,
+                 Register: payload
+                }
+        case SET_USER:
+             return {...state, user_token : payload};
         default:
             return state;
     }
