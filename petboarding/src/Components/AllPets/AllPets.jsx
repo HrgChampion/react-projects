@@ -26,7 +26,7 @@ export const AllPets=()=>{
       }, []);
 
 
-    return loading?<img className="loading-gif" src="https://c.tenor.com/A17aJ1ZniiUAAAAM/dog-walking.gif" alt="loading..."/>: (
+     return (
         <div>
 
         <br/>

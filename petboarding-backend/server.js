@@ -1,4 +1,4 @@
-const PORT = 5000
+const PORT =process.env.PORT|| 5001;
 const path = require('path')
 const jsonServer = require('json-server')
 const server = jsonServer.create()

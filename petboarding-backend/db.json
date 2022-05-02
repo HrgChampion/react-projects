@@ -37,7 +37,7 @@
       "city": "Boston",
       "capacity": 150,
       "price": 200,
-      "verified": false,
+      "verified": true,
       "rating": 4
     },
     {
@@ -69,6 +69,43 @@
       "verified": false,
       "capacity": "45",
       "id": 7
+    }
+  ],
+  "pets": [
+    {
+      "id": 1,
+      "name": "Fido",
+      "category": "dog",
+      "breed": "Labrador",
+      "age": "2"
+    },
+    {
+      "id": 2,
+      "name": "Darko",
+      "category": "Rabbit",
+      "breed": "Pink",
+      "age": "1"
+    },
+    {
+      "id": 3,
+      "name": "Stuart Little",
+      "category": "Rat",
+      "breed": "White",
+      "age": "1"
+    },
+    {
+      "name": "Bell",
+      "breed": "Brown",
+      "category": "Cat",
+      "age": "2",
+      "id": 4
+    },
+    {
+      "name": "Daisy",
+      "breed": "White",
+      "category": "Cat",
+      "age": "2",
+      "id": 5
     }
   ]
 }
